@@ -15,3 +15,17 @@ When you are unable to push changes to repository because your remote branch  ha
 3. If there are merge conflicts you need to merge them manually and then use this command  git add .
 4. git rebase —-continue
 5. Then we can push our changes to remote using   git push origin Abhinaba
+
+
+
+
+
+ng : The term 'ng' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a    
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ng g s service
++ ~~
+    + CategoryInfo          : ObjectNotFound: (ng:String) [], CommandNotFou  
+   ndException
+    + FullyQualifiedErrorId : CommandNotFoundException
