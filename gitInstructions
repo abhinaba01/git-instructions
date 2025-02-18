@@ -1,0 +1,17 @@
+echo "# udemy-course-cmp-deep-dive" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abhinaba01/udemy-course-cmp-deep-dive.git
+git push -u origin main
+
+
+When you are unable to push changes to repository because your remote branch  has some other commits that you did not push.
+
+
+1. Fetch changes from remote repository        git fetch origin
+2. Merge the remote changes into local branch   git pull origin main -—rebase
+3. If there are merge conflicts you need to merge them manually and then use this command  git add .
+4. git rebase —-continue
+5. Then we can push our changes to remote using   git push origin Abhinaba
