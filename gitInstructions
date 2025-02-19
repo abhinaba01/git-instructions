@@ -19,13 +19,10 @@ When you are unable to push changes to repository because your remote branch  ha
 
 
 
+When you want to merge changes in some other branch with your local and remote branch
+In this scenario changes are in main but want to push them in abhinaba(local and remote)
 
-ng : The term 'ng' is not recognized as the name of a cmdlet, function, 
-script file, or operable program. Check the spelling of the name, or if a    
-path was included, verify that the path is correct and try again.
-At line:1 char:1
-+ ng g s service
-+ ~~
-    + CategoryInfo          : ObjectNotFound: (ng:String) [], CommandNotFou  
-   ndException
-    + FullyQualifiedErrorId : CommandNotFoundException
+1.git fetch origin main (This will fetch the latest changes from the remote main branch but will not apply them to your local branch yet.)
+2.git checkout abhinaba 
+  git merge origin/main  (this will merge main into abhinaba, creating a new merge commit.)
+3.git push origin abhinaba (git push origin abhinaba) This will sync the changes in local and remote
