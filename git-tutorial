@@ -26,3 +26,8 @@ In this scenario changes are in main but want to push them in abhinaba(local and
 2.git checkout abhinaba 
   git merge origin/main  (this will merge main into abhinaba, creating a new merge commit.)
 3.git push origin abhinaba (git push origin abhinaba) This will sync the changes in local and remote
+
+
+
+
+ git remote rm origin // command for if you have mistakenly adding the wrong name of remote origin
